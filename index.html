@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Knopfhoelle</title>
+        <style>
+            /* ButtonShit */
+            .center {
+                text-align: center;
+            }
+            .button {
+                width:104px;
+                height:142px;
+            }
+            .green1 {
+                background-color: rgb(60, 179, 113, 0.6);
+                color: rgb(32, 94, 59);
+            }
+            .green2 {
+                background-color: rgba(152, 214, 180, 0.6);
+                color: rgb(72, 119, 93);
+            }
+            .green3 {
+                background-color: rgba(10, 225, 107, 0.6);
+                color: rgb(9, 103, 51);
+            }
+            .green4 {
+                background-color: rgba(3, 57, 27, 0.8);
+                color: rgb(98, 193, 140);
+            }
+            .red {
+                background-color: rgba(174, 56, 15, 0.8);
+                color: rgb(170, 151, 142);
+            }
+            .answer {
+                font-family:"Brush Script MT", cursive;
+                font-weight: bold;
+
+            }
+
+            /*AnswerShit*/
+             #f1 {
+                   position: fixed;
+                   bottom: 675px;
+                   right: 1450px;
+                    z-index:-1;
+             }
+            #f2 {
+                position: fixed;
+                bottom: 575px;
+                right: 1580px;
+                z-index:-2;
+            }
+            #f3 {
+                position: fixed;
+                bottom: 575px;
+                right: 1295px;
+                z-index:-2;
+            }
+            #f4 {
+                position: fixed;
+                bottom: 445px;
+                right: 1545px;
+                z-index:-3;
+            }
+            #f5 {
+                position: fixed;
+                bottom: 445px;
+                right: 1350px;
+                z-index:-4;
+            }
+
+
+            #a1 {
+                font-size:30px;
+                border-radius:150px;
+                padding:30px;
+                position: fixed;
+                z-index: 1;
+                bottom: 585px;
+                right: 1480px;
+                width: 180px;
+                height: 180px;
+                border: 10px solid rgb(241, 140, 7);
+                color: rgb(200, 123, 21);
+                background-color: rgb(218, 180, 130);
+            }
+
+            .flower {
+                border-radius: 150px;
+                padding: 30px;
+                width: 180px;
+                height: 180px;
+                border: 3px solid rgb(5, 5, 5);
+                color:rgb(200, 123, 21);
+                background-color:rgb(253, 253, 253);
+            }
+
+           #a2 {
+                font-size:30px;
+                border-radius:150px;
+                padding:20px;
+                position: fixed;
+                z-index: 1;
+                bottom: 200px;
+                right: 200px;
+                width: 250px;
+                height: 250px;
+                border: 10px solid rgb(187, 23, 239);
+                color: rgb(125, 17, 161);
+                background-color: rgb(208, 149, 221);
+            }
+
+            .bear {
+                border-radius: 100px;
+                padding: 30px;
+                width: 80px;
+                height: 80px;
+                border: 8px solid rgb(187, 23, 239);
+                color:rgb(200, 123, 21);
+                background-color: rgb(207, 148, 220);
+            }
+
+            #bear1 {
+                position: fixed;
+                bottom: 320px;
+                right: 140px;
+                z-index:-1;
+            }
+
+            #bear2 {
+                position: fixed;
+                bottom: 320px;
+                right: 340px;
+                z-index:-1;
+            }
+
+
+
+#a3 {
+    font-size:40px;
+    border-radius: 150px;
+    padding:20px;
+    position: fixed;
+    z-index: 3;
+    bottom: 175px;
+    right: 1110px;
+    width: 250px;
+    height: 250px;
+    border: 10px solid rgb(65, 140, 111);
+    color: rgb(39, 89, 73);
+    background-color: rgb(99, 229, 189);
+}
+            #a4 {
+                font-size: 40px;
+                border-radius: 250px;
+                padding: 20px;
+                position: fixed;
+                z-index: 5;
+                bottom: 375px;
+                right: 710px;
+                width: 450px;
+                height: 450px;
+                border: 0px solid rgb(205, 29, 29);
+                color: rgb(80, 4, 4);
+                background-color: rgb(255, 94, 94);
+            }
+
+            .klee {
+                border-radius: 250px;
+                padding: 30px;
+                width: 450px;
+                height: 450px;
+                border: 3px solid rgb(204, 29, 29);
+                color: rgb(80, 4, 4);
+                background-color: rgb(253, 94, 94);
+            }
+
+            #k1 {
+                position: fixed;
+                bottom: 510px;
+                right: 880px;
+                z-index:3;
+            }
+
+            #k2 {
+                position: fixed;
+                bottom: 190px;
+                right: 440px;
+                z-index: 4;
+            }
+            #k3 {
+                position: fixed;
+                bottom: 510px;
+                right: 440px;
+                z-index: 3;
+            }
+
+            #k4 {
+                position: fixed;
+                bottom: 190px;
+                right: 880px;
+                z-index: 3;
+            }
+
+            #k5 {
+                font-size: 40px;
+                border-radius: 350px;
+                padding: 20px;
+                position: fixed;
+                z-index: 2;
+                bottom: 3px;
+                right: 380px;
+                width: 450px;
+                height: 450px;
+                border-bottom: 50px solid rgb(205, 29, 29);
+                border-left: 50px solid rgb(205, 29, 29);
+                color: rgb(80, 4, 4);
+            }
+
+        </style>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body style="background-color: rgb(218, 180, 130);background-color:rgba(179,88,60,0.56);">
+        <div class="center">
+            <h1 style="color:rgb(60, 179, 113);">Willkommen in der Knopfhölle</h1>
+            <br>
+            <br>
+            <p style="color:rgb(221,13,13); font-size:160%;">Find the red button!</p>
+            <br>
+            <br>
+            <button id="b1" class="button green1 text1">It's me!</button>
+
+            <button id="b2" class="button green2 text3">It's me!</button>
+
+            <button id="b3" class="button green3 text4">It's me!</button>
+
+            <button id="b4" class="button green4 text2">It's me!</button>
+
+            <button id="b5" class="button green3 text1">It's me!</button>
+            <br>
+            <button id="b6" class="button green3 text2">It's me!</button>
+
+            <button id="b7" class="button green1 text4">It's me!</button>
+
+            <button id="b8" class="button green2 text3">It's me!</button>
+
+            <button id="b9" class="button red text1">It's me!</button>
+
+            <button id="b10" class="button green4 text1">It's me!</button>
+            <br>
+            <button id="b11" class="button green1 text1">It's me!</button>
+
+            <button id="b12" class="button green3 text4">It's me!</button>
+
+            <button id="b13" class="button green4 text3">It's me!</button>
+
+            <button id="b14" class="button green2 text2">It's me!</button>
+
+            <button id="b15" class="button green1 text1">It's me!</button>
+            <br>
+            <button id="b16" class="button green2 text2">It's me!</button>
+
+            <button id="b17" class="button red text4">It's me!</button>
+
+            <button id="b18" class="button green2 text3">It's me!</button>
+
+            <button id="b19" class="button green1 text1">It's me!</button>
+
+            <button id="b20" class="button green3 text1">It's me!</button>
+            <br>
+        </div>
+
+        <button id="a1" class="answer hihi" hidden>Hihihi. No.</button>
+        <button id="a2" class="answer wrong" hidden >Nop. That was wrong!</button>
+        <button id="a3" class="answer yeah" hidden>Yeah, not the right one.</button>
+        <button id="a4" class="answer guess" hidden>Good guess, but Nah.</button>
+
+        <p id="f1" class="flower hihi" hidden></p>
+        <p id="f2" class="flower hihi" hidden></p>
+        <p id="f3" class="flower hihi" hidden></p>
+        <p id="f4" class="flower hihi" hidden></p>
+        <p id="f5" class="flower hihi" hidden></p>
+
+        <p id="bear1" class="bear wrong" hidden></p>
+        <p id="bear2" class="bear wrong" hidden></p>
+
+<p id="k1" class="klee guess" hidden></p>
+        <p id="k2" class="klee guess" hidden></p>
+        <p id="k3" class="klee guess" hidden></p>
+        <p id="k4" class="klee guess" hidden></p>
+        <p id="k5" class="guess" hidden></p>
+
+    <script>
+
+        for  (var greenHell1 of document.getElementsByClassName('button')) {
+            greenHell1.addEventListener('click', function (event) {
+                var button = event.target;
+
+                if (button.classList.contains('green1')) {
+                    button.classList.remove('green1');
+                    button.classList.add('green2');
+                } else if (button.classList.contains('green2')) {
+                    button.classList.remove('green2');
+                    button.classList.add('green3');
+                } else if (button.classList.contains('green3')) {
+                    button.classList.remove('green3');
+                    button.classList.add('green4');
+                } else if (button.classList.contains('green4')) {
+                    button.classList.remove('green4');
+                    button.classList.add('red');
+                } else if (button.classList.contains('red')) {
+                    button.classList.remove('red');
+                    button.classList.add('green1');
+                }
+            })
+        }
+
+        for (var greenHell2 of document.getElementsByClassName('button')) {
+            greenHell2.addEventListener('click', function (event) {
+                var button = event.target;
+
+                if (button.classList.contains('text1')) {
+                    f1.removeAttribute('hidden');
+                    f2.removeAttribute('hidden');
+                    f3.removeAttribute('hidden');
+                    f4.removeAttribute('hidden');
+                    f5.removeAttribute('hidden');
+                    a1.removeAttribute('hidden');
+                }
+            })
+        }
+
+        for (var greenHell3 of document.getElementsByClassName('hihi')) {
+            greenHell3.addEventListener('click', function (event) {
+
+                    f1.setAttribute('hidden','');
+                    f2.setAttribute('hidden','');
+                    f3.setAttribute('hidden','');
+                    f4.setAttribute('hidden','');
+                    f5.setAttribute('hidden','');
+                    a1.setAttribute('hidden','');
+            })
+        }
+
+
+        for (var purpleHell1 of document.getElementsByClassName('button')) {
+            purpleHell1.addEventListener('click', function (event) {
+                var button = event.target;
+
+                if (button.classList.contains('text2')) {
+                    bear1.removeAttribute('hidden');
+                    bear2.removeAttribute('hidden');
+                    a2.removeAttribute('hidden');
+                }
+            })
+        }
+
+        for (var purpleHell2 of document.getElementsByClassName('wrong')) {
+            purpleHell2.addEventListener('click', function (event) {
+
+                bear1.setAttribute('hidden','');
+                bear2.setAttribute('hidden','');
+                a2.setAttribute('hidden','');
+            })
+        }
+
+        for (var limeHell1 of document.getElementsByClassName('button')) {
+            limeHell1.addEventListener('click', function (event) {
+                var button = event.target;
+
+                if (button.classList.contains('text3')) {
+                    a3.removeAttribute('hidden');
+                }
+            })
+        }
+
+        for (var limeHell2 of document.getElementsByClassName('yeah')) {
+            limeHell2.addEventListener('click', function (event) {
+
+                a3.setAttribute('hidden','');
+            })
+        }
+
+        for (var pinkHell1 of document.getElementsByClassName('button')) {
+            pinkHell1.addEventListener('click', function (event) {
+                var button = event.target;
+
+                if (button.classList.contains('text4')) {
+                    k1.removeAttribute('hidden');
+                    k2.removeAttribute('hidden');
+                    k3.removeAttribute('hidden');
+                    k4.removeAttribute('hidden');
+                    k5.removeAttribute('hidden');
+                    a4.removeAttribute('hidden');
+                }
+            })
+        }
+
+        for (var pinkHell2 of document.getElementsByClassName('guess')) {
+            pinkHell2.addEventListener('click', function (event) {
+
+                k1.setAttribute('hidden','');
+                k2.setAttribute('hidden','');
+                k3.setAttribute('hidden','');
+                k4.setAttribute('hidden','');
+                k5.setAttribute('hidden','');
+                a4.setAttribute('hidden','');
+            })
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//                    button.classList.remove('green1');
+  //                  button.classList.add('green2');
+    //            } else if (button.classList.contains('green2')) {
+      //              button.classList.remove('green2');
+        //            button.classList.add('green3');
+          //      } else if (button.classList.contains('green3')) {
+            //        button.classList.remove('green3');
+              //      button.classList.add('green4');
+//                } else if (button.classList.contains('green4')) {
+  //                  button.classList.remove('green4');
+    //                button.classList.add('red');
+      //          } else if (button.classList.contains('red')) {
+        //            button.classList.remove('red');
+          //          button.classList.add('green1');
+//                }
+  //          })
+    //    }
+
+
+
+        // if (kondition) {
+        //
+        // }
+        //
+        // if (kondition) {
+        //
+        // } else {
+        //
+        // }
+        //
+        // if (kondition) {
+        //
+        // } else if (kondition2) {
+        //
+        // } else if (kondition3) {
+        //
+        // } else {
+        //
+        // }
+
+
+       // for  (var greenHell1 of document.getElementsByClassName('green1')) {
+         //   greenHell1.addEventListener('click', function (event) {
+           //     var greenHell1 = event.target;
+             //   greenHell1.className = 'button green2';
+          //  })
+       // }
+       // for  (var greenHell2 of document.getElementsByClassName('green2')) {
+         //   greenHell2.addEventListener('click', function (event) {
+           //     var greenHell2 = event.target;
+             //   greenHell2.className = 'button green3';
+  //          })
+    //    }
+      //  for  (var greenHell3 of document.getElementsByClassName('green3')) {
+        //    greenHell3.addEventListener('click', function (event) {
+          //      var greenHell3 = event.target;
+            //    greenHell3.className = 'button green4';
+//            })
+  //      }
+    //    for  (var greenHell4 of document.getElementsByClassName('green4')) {
+      //      greenHell4.addEventListener('click', function (event) {
+        //        var greenHell4 = event.target;
+          //      greenHell4.className = 'button red';
+ //           })
+   //     }
+     //   for  (var redHell of document.getElementsByClassName('red')) {
+       //     redHell.addEventListener('click', function (event) {
+         //       var redHell = event.target;
+           //     redHell.className = 'button green1';
+ //           })
+   //     }
+
+
+
+
+
+
+       //for (var greenHell of document.getElementsByClassName('button')) {
+         //  greenHell.addEventListener('click', function (event) {
+           //    var greenHell = event.target;
+             //       greenHell.style.backgroundColor = 'dodgerblue';
+           //})
+       //}
+
+
+
+       // for (var meinKnopp of document.getElementsByClassName('knopp')) {
+       //     meinKnopp.addEventListener()
+       // }
+
+       //document.getElementById('13').addEventListener('click', function (event) {
+          // var greenHell = event.target;
+           //greenHell.style.backgroundColor = 'rgba(62, 119, 88, 0.6)';
+          // greenHell.style.color = 'rgba(62, 119, 88)';
+           //var redHell = document.getElementById('7');
+           //redHell.style.backgroundColor = 'rgba(209, 52, 13, 0.6)';
+           //redHell.style.color = 'rgba(209, 52, 13)';
+    </script>
+    </body>
+</html>
